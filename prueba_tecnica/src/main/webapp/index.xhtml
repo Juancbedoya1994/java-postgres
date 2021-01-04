@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <head>
+        <title>Prueba </title>
+        
+    </head>
+    <body onload="">
+        <h:form id="pagVPF">
+            
+              <div>
+                <h:outputLabel value="codigo"/>
+                <h:inputText value="#{prueba.codigo}"/>
+            </div>
+            
+            <div>
+                <h:outputLabel value="Nombre"/>
+                <h:inputText value="#{prueba.nombre}"/>
+            </div>
+            <div>
+                <h:outputLabel value="Apelllido"/>
+                <h:inputText value="#{prueba.apellido}"/>
+            </div>
+            <div>
+                <h:commandButton id="btnAceptar" action="#{prueba.resultado}" value="Aceptar"   onclick=""/>
+            </div>
+            
+            <div>
+                <h:commandButton id="btnEliminar" action="#{prueba.eliminar}" value="Eliminar"   onclick=""/>
+            </div>
+            
+            <div>
+                <h:commandButton id="btnInsertar" action="#{prueba.insertar()}" value="insertar"   onclick=""/>
+            </div>
+            
+            <div>
+                <h:commandButton id="btnActualizar" action="#{prueba.modificar()}" value="modificar"   onclick=""/>
+            </div>
+            
+        </h:form>
+    </body>
+</html>
